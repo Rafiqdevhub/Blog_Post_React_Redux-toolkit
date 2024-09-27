@@ -4,6 +4,9 @@ import App from "./App.jsx";
 import "./index.css";
 import { Provider } from "react-redux";
 import { store } from "./redux/store.jsx";
+import { fetchUsers } from "./features/users/UserSlice.jsx";
+
+store.dispatch(fetchUsers());
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
