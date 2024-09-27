@@ -17,8 +17,8 @@ const initialState = [
   },
   {
     id: "2",
-    title: "Slices...",
-    content: "The more I say slice, the more I want pizza.",
+    title: "Learning React",
+    content: "The more I learn, the more I love it.",
     date: sub(new Date(), { minutes: 5 }).toISOString(),
     reactions: {
       thumbsUp: 0,
