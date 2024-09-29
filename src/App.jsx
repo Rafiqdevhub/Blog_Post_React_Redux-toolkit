@@ -3,6 +3,7 @@ import AddPostForm from "./components/AddPostForm";
 import Layout from "./components/Layout";
 import PostsList from "./components/PostsList";
 import SinglePostPage from "./components/SinglePostPage";
+import EditPostForm from "./components/EditPostForm";
 
 const App = () => {
   return (
@@ -13,7 +14,7 @@ const App = () => {
         <Route path="post">
           <Route index element={<AddPostForm />} />
           <Route path=":postId" element={<SinglePostPage />} />
-          {/* <Route path="edit/:postId" element={<EditPostForm />} /> */}
+          <Route path="edit/:postId" element={<EditPostForm />} />
         </Route>
       </Route>
     </Routes>
