@@ -1,10 +1,9 @@
 import { useSelector } from "react-redux";
 import {
-  selectAllPosts,
-  getPostsStatus,
   getPostsError,
+  getPostsStatus,
   selectPostIds,
-} from "../features/posts/PostsSlice";
+} from "../../features/posts/PostsSlice";
 import PostsExcerpt from "./PostsExcerpt";
 
 const PostsList = () => {
@@ -14,7 +13,7 @@ const PostsList = () => {
 
   let content;
   if (postStatus === "loading") {
-    content = <p>"Loading..."</p>;
+    content = <p>&quot;Loading...&quot;</p>;
   } else if (postStatus === "succeeded") {
     content = orderedPostIds.map((postId) => (
       <PostsExcerpt key={postId} postId={postId} />

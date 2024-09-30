@@ -2,8 +2,8 @@ import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 import { useNavigate } from "react-router-dom";
-import { addNewPost } from "../features/posts/PostsSlice";
-import { selectAllUsers } from "../features/users/UserSlice";
+import { selectAllUsers } from "../../features/users/UserSlice";
+import { addNewPost } from "../../features/posts/PostsSlice";
 
 const AddPostForm = () => {
   const dispatch = useDispatch();

@@ -1,11 +1,11 @@
 import { Navigate, Route, Routes } from "react-router-dom";
-import AddPostForm from "./components/AddPostForm";
 import Layout from "./components/Layout";
-import PostsList from "./components/PostsList";
-import SinglePostPage from "./components/SinglePostPage";
-import EditPostForm from "./components/EditPostForm";
 import UsersList from "./components/users/UsersList";
 import UserPage from "./components/users/UserPage";
+import PostsList from "./components/post/PostsList";
+import AddPostForm from "./components/post/AddPostForm";
+import SinglePostPage from "./components/post/SinglePostPage";
+import EditPostForm from "./components/post/EditPostForm";
 
 const App = () => {
   return (
