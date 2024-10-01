@@ -40,6 +40,7 @@ export const updatePost = createAsyncThunk(
       const response = await axios.put(`${POSTS_URL}/${id}`, initialPost);
       return response.data;
     } catch (err) {
+      console.error("Failed to update post:", err);
       return initialPost;
     }
   }
